@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style (1).css">
+    <link rel="shortcut icon" href="./icone/favicon.ico" type="image/x-icon">
+    <style>  
+        * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: Helvetica, sans-serif;
+           color: #323232;
+           border: none;
+       }
+   
+       input, label {
+         display: block;
+         outline: none;
+         width: 100%;
+       }
+   
+       a {
+          color: #E60084;
+       }
+   
+       body {
+          padding-top: 5vh;
+          background-image: url('./Imagens/entrar.webp');
+          background-size: cover;
+          background-position-y: -150px;
+       }
+
+       .cad{
+        margin-right: 45px;
+       }
+
+       .cadastro2{
+          margin-top: -50px;
+        }
+
+        .abaixar{
+          margin-top: 100px;
+        }
+       </style>
+    <title>Entrar</title>
+</head>
+<body>
+    <div id="main-container" class="abaixar">
+        <h1>Bem-Vindo Denovo</h1>
+        <form id="register-form">
+            <div class="full-box">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="name" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+            </div>
+
+            <div class="full-box">
+                <label for="password">Senha:</label>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua Senha" data-password-validate data-required>
+            </div>
+            
+            <div class="half-box cadastro2 a">
+                <p><a class="a" href="#">Esqueci Minha Senha</a></p>
+            </div>
+
+            <div class="half-box cadastro2 cad">
+                <p><a class="a" href="matricula.html">Criar Conta</a></p>
+            </div>
+            <br><br>
+
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Continuar">
+            </div>
+
+            
+        </form>
+    </div>
+    <p class="error-validation template subir" ></p>
+
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>

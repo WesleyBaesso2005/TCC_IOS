@@ -1,0 +1,709 @@
+/* navbar e fundo*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.image{
+  width: 1349px;
+  height: 500px;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  margin-right: 500px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 8vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+    float: right;
+  }
+  
+  .mobile-menu {
+    display: block;
+    float: right;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .pon, .meet, .hib, .cert {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .map {
+    width: 400px;
+    height: 180px;
+  }
+  
+  .hib {
+    width: 270px;
+    height: 220px;
+  }
+
+  .button{
+    align-items: center;
+  }
+
+  .image{
+    width: 800px;
+    height: 400px;
+  }
+
+  .Par {
+    opacity: 60%;
+    padding-top: -10%;
+    padding-right: 40%;
+  }
+  .IOS{
+    opacity: 20%;
+    padding-top: 40%;
+    margin-top: 50px;
+    padding-left: 0%;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+
+/*sobre*/
+
+.S {
+  background-color: rgb(36, 35, 35);
+  color: white;
+  padding: 80px;
+  text-align: center;
+  margin-top:-5px;
+  font-size: large;
+}
+
+.livro {
+  float: left;
+  width: 280px;
+  height: 276px;
+}
+
+/*qualidades*/
+
+.quali {
+  background-color: rgb(90, 86, 86); /*rgb(79, 81, 211)*/
+  margin-top: 100px;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+  font-size: large;
+}
+
+.im{
+  height: 200px;
+}
+
+
+/*Cursos*/
+
+.cursos {
+  margin: 60px;
+}
+
+.cs {
+  margin-top: 30px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(1, 45, 102);
+}
+
+.um, .dois, h2 {
+  text-align: center;
+}
+
+.um {
+  margin-bottom: 70px;
+}
+
+.t {
+  padding: 20px 125px;
+}
+
+
+/*footer*/
+
+footer {
+  padding: 70px;
+  background: #23232e;
+  display: grid;
+}
+
+.RS {
+  height: 60px;
+  width: 50px;
+}
+
+.Par {
+  display: table-cell;
+  float: right;
+  height: 50px;
+  width: 160px;
+  margin-top: -50px;
+  margin-left: 190px;
+  margin-right: 30px;
+}
+
+.IOS {
+  display: table-cell;
+  float: right;
+  height: 100px;
+  width: 100px;
+  margin-top: 1px;
+}
+
+.lo {
+  float: left;
+  height: 60px;
+  width: 60px;
+}
+
+.cor {
+  color: white;
+  font-weight: bold;
+}
+
+h1 {
+  padding-top: 15px;
+  font-size: 35px;
+}
+
+p {
+  margin-top: 40px;
+}
+
+/* Pagina Sobre*/
+.img {
+  width: 1348px;
+  height: 470px;
+}
+
+.imagem{
+  display: table-cell;
+  float: left;
+  margin-left: 30px;
+  width: 400px;
+  margin-top: 60px;
+  margin-right: 20px;
+  border: 2px solid black;
+}
+
+.texto{
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.section{
+  padding-top: 100px;
+}
+
+.titulo{
+  display: table-cell;
+  float: right;
+  margin-right: 730px;
+  margin-top: 50px;  
+}
+
+/*Fim da Historia*/
+
+.imagem2{
+  display: table-cell;
+  float: right;
+  margin-right: 30px;
+  margin-top: -100px;
+  margin-left: 850px;
+  width: 400px;
+  border: 2px solid black;
+}
+
+.conteudo{
+  display: table;
+}
+
+.texto2{
+  display: table-cell;
+  float: right;
+  margin-top: -150px;
+  margin-right: 400px;
+  width: 300px;
+  padding-right: 90px;
+
+}
+
+.titulo2{
+  display: table-cell;
+  float: left;
+  margin-left: 630px;
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+/*fim do Principios*/
+
+.imagem3{
+  display: table-cell;
+  float: left;
+  margin-left: 30px;
+  width: 400px;
+  border: 2px solid black;
+}
+
+.texto3{
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.titulo3{
+  display: table-cell;
+  float: right;
+  margin-right: 590px;
+  margin-top: 20px;
+}
+/* Fim sobre nos*/
+
+.button{
+  margin-top: 400px;
+  margin-right: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px 100px;
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(rgb(63, 63, 238), rgb(30, 30, 131), rgb(4, 4, 65)); 
+}
+
+
+
+.a{
+  color: blue;
+}
+
+
+/* form */
+#main-container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  margin-right: 2.5%;
+}
+
+label {
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: .9rem;
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border-color: #E60084;
+}
+
+input[type="submit"] {
+  background-color: #E60084;
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#agreement {
+  margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+  display: inline-block;
+  width: auto;
+}
+
+.error-validation {
+  color: #ff1a1a;
+  position: absolute;
+  top: 57px;
+  font-size: 12px;
+}
+
+.template {
+  display: none;
+}
+
+.subir{
+  margin-top: 6px;
+}
+
+/*Informações do curso*/
+.preco, .comprar {
+  margin-top: 10px;
+}
+
+.preco{
+  margin-bottom: -35px;
+  padding-right: 290px;
+}
+
+.comprar {
+  float: right;
+  margin-right: 25px;
+  padding: 8px 35px;
+  margin-top: 2px;
+}
+
+hr {
+  margin-right: -9px;
+  border: black solid -1px;
+}
+
+.dados {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 66px;
+  float: right;
+  padding-top: 20px;
+  /*padding-left: 50px;*/
+  margin-right: 80px;
+  padding-right: 9px;
+}
+
+.preco, .comprar, .info, .des {
+  padding-left: 30px;
+}
+
+.gt {
+  height: 440px;
+  width: 700px;
+  margin-left: 70px;
+  margin-top: 70px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.aula {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px 20px;
+  background-color: black;
+  color: white;
+}
+
+.porq {
+  margin-left: 150px;
+  padding-top: 80px;
+  margin-bottom: -50px;
+}
+
+.ling {
+  height: 1px;
+  border: transparent;
+}
+
+/*sobre o tipo de curso*/
+.tit {
+  margin-top: 100px;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  float: left;
+}
+
+.to {
+  padding: 10px;
+}
+
+.imges {
+  float: right;
+  border: 1px solid black;
+  border-radius: 7px;
+  height: 300px;
+  width: 600px;
+  margin-left: 11px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  margin-right: -20px;
+}
+
+/*Necessário*/
+
+.nes {
+  margin-top: 500px;
+  margin-left: 75px;
+}
+
+.ma {
+  margin-left: 0px;
+}
+
+
+/*Modulos*/ 
+
+.mod {
+  margin-left: 75px;
+}
+
+/*Cursos*/
+.ima{
+  width: 360px;
+  height: 230px;
+}
+
+i{
+  background-color: yellow;
+  border: 1px solid grey;
+}
+
+.user{
+  height: 30px;
+  width: 30px;
+  margin-top: 30px;
+}
+
+.txt{
+  margin-top: -26px;
+  margin-left: 50px;
+}
+
+.txta{
+  margin-top: -26px;
+  margin-left: 50px;
+}
+
+.tx{
+  margin-top: 0px;
+}
+
+.desce{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px 100px;
+  color: white;
+  font-weight: bold;
+  margin-left: 40px;
+  background-image: linear-gradient(rgb(63, 63, 238), rgb(30, 30, 131), rgb(4, 4, 65)); 
+}
+
+.borda{
+  border: 2px solid black;
+  width: 360px;
+  height: 630px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.borda2{
+  border: 2px solid black;
+  width: 360px;
+  height: 630px;
+  margin-top: -635px;
+  margin-left: 490px;
+}
+
+.borda3{
+  border: 2px solid black;
+  width: 360px;
+  height: 630px;
+  margin-top: -635px;
+  margin-left: 960px;
+}
+
+.bl{
+  color: white;
+}
+
+.buttonc{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px 100px;
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(rgb(63, 63, 238), rgb(30, 30, 131), rgb(4, 4, 65)); 
+}
+
+/*modulos*/
+ .los{
+  margin-left: 80px;
+  margin-bottom: 20px;
+ }
+
+.opc {
+  float: right;
+  display: grid;
+  align-items: flex-end;
+  padding: 5px 9px;
+  margin-top: -6px;
+  background-image: linear-gradient(rgb(63, 63, 238), rgb(30, 30, 131));
+  color: white;
+}
+
+
+
+.te {
+  margin-left: 130px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.lado{
+  margin-right: 20px;
+}
+
+.h3{
+  margin-left: 7px;
+}
+
+.h3a{
+  margin-left: 10px;
+}

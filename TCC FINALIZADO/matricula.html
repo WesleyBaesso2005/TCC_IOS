@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula</title>
+    <link rel="stylesheet" href="style (1).css">
+    <link rel="shortcut icon" href="./icone/favicon.ico" type="image/x-icon">
+    <style>  
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Helvetica, sans-serif;
+        color: #323232;
+        border: none;
+    }
+
+    input, label {
+      display: block;
+      outline: none;
+      width: 100%;
+    }
+
+    a {
+       color: #E60084;
+    }
+
+    body {
+       padding-top: 5vh;
+       background-image: url('./Imagens/fundo.jpg');
+       background-size: cover;
+       background-position-y: -150px;
+    }
+ 
+    
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <h1>Cadastre-se para acessar o sistema</h1>
+        <form id="register-form" action="">
+          <div class="full-box">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+          </div>
+          <div class="half-box spacing">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+          </div>
+          <div class="half-box">
+              <label for="lastname">Sobrenome</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" data-required data-only-letters>
+          </div>
+          <div class="half-box spacing">
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" id="name" placeholder="Confirme seu Telefone" data-min-length="9" data-max-length="15">
+        </div>
+        <div class="half-box">
+            <label for="idade">Idade:</label>
+            <input type="text" list="idade" placeholder="Selecione sua Idade" data-required>
+            <datalist id="idade">
+                <option value="10 a 18 anos"></option>
+                <option value="18 a 30 anos"></option>
+                <option value="30 a 60 anos"></option>
+                <option value="Acima de 60 anos"></option>
+            </datalist>
+        </div>
+          <div class="half-box spacing">
+            <label for="lastname">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+          </div>
+          <div class="half-box">
+            <label for="passconfirmation">Confirmação de senha</label>
+            <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
+          </div>
+          <div>
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement" id="agreement-label">Eu li e aceito os <a href="https://www.iubenda.com/privacy-policy/73163850" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Política de Privacidade ">Política de Privacidade</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script></label>
+          </div>
+          <div class="full-box">
+            <input id="btn-submit" type="submit" value="Registrar">
+          </div>
+        </form>
+      </div>
+      <p class="error-validation template subir"></p>
+      <script src="js/scripts.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
